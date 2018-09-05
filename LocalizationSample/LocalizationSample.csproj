@@ -11,11 +11,17 @@
 
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="3.1.0.697729" />
+    <PackageReference Include="I18n.net" Version="0.1.2" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Localizations\" />
     <Folder Include="Interfaces\" />
     <Folder Include="Helpers\" />
+    <Folder Include="I18NPortable\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="I18NPortable\en.txt" />
+    <EmbeddedResource Include="I18NPortable\nl.txt" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="Localizations\Language.en.resx">
@@ -45,5 +51,9 @@
     <Compile Update="Localizations\Language.nl.Designer.cs">
       <DependentUpon>Language.nl.resx</DependentUpon>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="I18NPortable\en.txt" />
+    <None Remove="I18NPortable\nl.txt" />
   </ItemGroup>
 </Project>

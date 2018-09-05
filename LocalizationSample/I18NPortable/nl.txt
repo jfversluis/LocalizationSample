@@ -1,0 +1,1 @@
+﻿WelcomeToXamarin = Welkom bij Xamarin.Forms!

@@ -6,5 +6,11 @@
         
         <!-- Translation with markup extension -->
         <Label Text="{extensions:Translate WelcomeToXamarin}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        
+        <!-- Translation with I18N-Portable -->
+        <Label Text="{Binding Strings[WelcomeToXamarin]}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        
+        <Button Text="Switch to Dutch" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"   Command="{Binding SwitchLanguageCommand}" CommandParameter="nl"/>
+        <Button Text="Switch to English" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Command="{Binding SwitchLanguageCommand}" CommandParameter="en"/>
     </StackLayout>
 </ContentPage>
